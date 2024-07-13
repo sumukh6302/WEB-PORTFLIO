@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container"></div>
+        <nav id="image">
+            <img src="images/Sumukh (2).png">
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX designer</p>
+            <h2>Hi,My name is <span>Sumukh</span><br>and I am happy to start<br> my developing journey!</h2>
+        </div>
+    </div>
+    </div>
+    <!-- -------About------- -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+             <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I am Sandarikari Sumukh from India and now I am currently pursuing bachelor of technoloy in electrical engineering in the IIT Kanpur, India.I am happy to start my web developing journey by learning CSS, HTML, Javascript. Here's a portfolio of some of my work. I hope you enjoy them!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience&Hobbies</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, C++, HTML, CSS, Javascript.</li>
+                        
+                        <li><span>Tools&Libraries</span><br>Fusion360, LATEX.</li>
+                        <li><span>Soft Skills</span><br>Communication, teamwork, leadership.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Positions of Responsibility</span><br>Media&Publicity Secretary, Techkriti.</li>
+                        
+                        <li><span>Hobbies&Interests</span>Cricket, Badminton, Movies.<br></li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School(10th)</span><br>Sri Chaitanya High School, Karimnagar.</li>
+                        
+                        <li><span>College(11th and 12th)</span><br>Sri Chaitanya Junior Kalashala, Hyderabad.</li>
+                        <li><span>Btech(ongoing)</span><br>Indian Institute of Technoloy Kanpur, dept.Electrical Engineering.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <!-- contact section -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"><h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>sumukhsandarikari@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 8309567830</p>
+            <div class="social-icons">
+                
+                <a href="#"><i class="fa-brands fa-facebook" alt="facebook profile"></i></a>
+                <a href="https://www.instagram.com/_sumukh_2_6/" alt="insta profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sumukh-sandarikari-79714a274/" alt="linkedin profile"><i class="fa-brands fa-linkedin"></i></a>
+                
+            </div>
+            <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"><form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form></div>
+           
+        </div>
+   
+ 
+ <script src="script.js"></script>
+</body>
+
+</html>
